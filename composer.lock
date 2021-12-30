@@ -1,0 +1,67 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "250745f6e1d0b3af88220d7ce25b8874",
+    "packages": [
+        {
+            "name": "nirix/nanite",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nirix/nanite.git",
+                "reference": "1e6202e6fd176fa16a6870bb161609e4bd7d552a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nirix/nanite/zipball/1e6202e6fd176fa16a6870bb161609e4bd7d552a",
+                "reference": "1e6202e6fd176fa16a6870bb161609e4bd7d552a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/Nanite.php"
+                ],
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jack Polgar",
+                    "email": "jack@polgar.id.au"
+                }
+            ],
+            "description": "PHP Micro-framework",
+            "homepage": "http://nirix.github.io/nanite/",
+            "keywords": [
+                "framework",
+                "micro"
+            ],
+            "support": {
+                "issues": "https://github.com/nirix/nanite/issues",
+                "source": "https://github.com/nirix/nanite/tree/v1.1.0"
+            },
+            "time": "2016-01-27T04:49:13+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}
