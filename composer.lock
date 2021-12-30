@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "250745f6e1d0b3af88220d7ce25b8874",
+    "content-hash": "6b0463905fc74c8ca8254836eff975d3",
     "packages": [
         {
             "name": "nirix/nanite",
@@ -61,7 +61,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^8.0.0"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.2.0"
 }
