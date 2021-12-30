@@ -4,57 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b0463905fc74c8ca8254836eff975d3",
-    "packages": [
-        {
-            "name": "nirix/nanite",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nirix/nanite.git",
-                "reference": "1e6202e6fd176fa16a6870bb161609e4bd7d552a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nirix/nanite/zipball/1e6202e6fd176fa16a6870bb161609e4bd7d552a",
-                "reference": "1e6202e6fd176fa16a6870bb161609e4bd7d552a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src/Nanite.php"
-                ],
-                "files": [
-                    "src/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Jack Polgar",
-                    "email": "jack@polgar.id.au"
-                }
-            ],
-            "description": "PHP Micro-framework",
-            "homepage": "http://nirix.github.io/nanite/",
-            "keywords": [
-                "framework",
-                "micro"
-            ],
-            "support": {
-                "issues": "https://github.com/nirix/nanite/issues",
-                "source": "https://github.com/nirix/nanite/tree/v1.1.0"
-            },
-            "time": "2016-01-27T04:49:13+00:00"
-        }
-    ],
+    "content-hash": "0cb4da4d47a149ef6e029ef4c895cf31",
+    "packages": [],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
