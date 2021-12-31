@@ -13,8 +13,8 @@ Nanite::get('/about', function(){
 });
 
 // Regex enabled, groups get passed to the function.
-Nanite::get('/projects/([a-zA-Z0-9\-_]+)', function($project){
-    Mur::render('primary', array('planet' => $project));
+Nanite::get('/product/([a-zA-Z0-9\-_]+)', function($project){
+    Mur::render('product', array('planet' => $project));
 });
 
 // Handle a POST request
