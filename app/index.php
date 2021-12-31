@@ -2,8 +2,12 @@
 
 require "../vendor/autoload.php";
 
+$m = new Mustache_Engine(array('entity_flags' => ENT_QUOTES));
+
 Nanite::get('/', function(){
-    echo "Front page";
+    // echo "Front page";
+    echo $m->render('Hello {{planet}}', array('planet' => 'World!')); // "Hello World!"
+
 });
 
 // All routes start with /
