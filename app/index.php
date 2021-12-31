@@ -7,7 +7,7 @@ Nanite::get('/', function(){
     // echo "Front page";
     // $m = new Mustache_Engine(array('entity_flags' => ENT_QUOTES));
     // echo $m->render('Hello {{planet}}', array('planet' => 'World!')); // "Hello World!"
-    Mur::render('index', array('planet' => 'World!'));
+    Mur::render('primary', array('planet' => 'World!'));
 
 
 });
