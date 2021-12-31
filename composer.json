@@ -1,7 +1,17 @@
 {
+    "name": "ayrscott/ace.sbs",
+    "description": "Ayrscott Computers & Electronics Website",
+    "type": "project",
     "require": {
         "php": "^8.0.0",
         "nirix/nanite": "^1.1",
         "mustache/mustache": "^2.14"
-    }
+    },
+    "authors": [
+        {
+            "name": "Jared De Blander",
+            "email": "jared@ayrscott.com",
+            "homepage": "https://ayrscott.com"
+        }
+    ]
 }
