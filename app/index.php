@@ -4,12 +4,7 @@ require "../vendor/autoload.php";
 require "../lib/Mur.php";
 
 Nanite::get('/', function(){
-    // echo "Front page";
-    // $m = new Mustache_Engine(array('entity_flags' => ENT_QUOTES));
-    // echo $m->render('Hello {{planet}}', array('planet' => 'World!')); // "Hello World!"
     Mur::render('primary', array('planet' => 'World!'));
-
-
 });
 
 // All routes start with /
