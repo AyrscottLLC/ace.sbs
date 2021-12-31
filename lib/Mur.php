@@ -15,7 +15,7 @@ class Mur
      * @param string $template
      * @param object $obj
      */
-    public static function render($template, $obj)
+    public static function render($template, $obj = null)
     {
         $template = self::$templatePath . $template . '.html';
         $m = new Mustache_Engine(array('entity_flags' => ENT_QUOTES));
