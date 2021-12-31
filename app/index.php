@@ -20,5 +20,6 @@ Nanite::get('/projects/([a-zA-Z0-9\-_]+)', function($project){
 // Handle a POST request
 Nanite::post('/contact', function(){
     // Handle submitted contact form.
+    var_dump($_POST);
 });
 
