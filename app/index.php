@@ -19,7 +19,7 @@ Nanite::get('/about', function(){
 
 // Regex enabled, groups get passed to the function.
 Nanite::get('/projects/([a-zA-Z0-9\-_]+)', function($project){
-    echo "Project page for {$project}";
+    Mur::render('primary', array('planet' => $project));
 });
 
 // Handle a POST request
