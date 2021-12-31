@@ -1,6 +1,7 @@
 {
     "require": {
         "php": "^8.0.0",
-        "nirix/nanite": "^1.1"
+        "nirix/nanite": "^1.1",
+        "mustache/mustache": "^2.14"
     }
 }
