@@ -2219,8 +2219,8 @@ button:active,
 }
 
 #main>section.dark {
-	color: #ddd;
-	color: rgba(255, 255, 255, 0.75);
+	color: #fff;
+	color: rgba(255, 255, 255, 1);
 }
 
 #main>section.dark h2, #main>section.dark h3, #main>section.dark h4, #main>section.dark h5, #main>section.dark h6 {
