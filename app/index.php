@@ -2,7 +2,7 @@
 
 require "../vendor/autoload.php";
 require "../lib/Mur.php";
-require "../lib/Discohook.php";
+require "../lib/DH.php";
 
 Nanite::get('/', function () {
     Mur::render('primary');
@@ -20,27 +20,20 @@ Nanite::get('/product/([a-zA-Z0-9\-_]+)', function ($product) {
 // Handle a POST request
 Nanite::post('/contact', function () {
     // Handle submitted contact form.
-    $dh = new Discohook();
+    $dh = new DH();
     $dh->log(print_r($_POST, true));
 });
 
-Nanite::get('/login', function () {
-    Mur::render('login');
-});
-
-Nanite::post('/auth', function () {
-    // Handle submitted login form.
-    $dh = new Discohook();
-    $dh->log(print_r($_POST, true));
-});
-
+Nanite::get('/login', function () { Mur::render('login'); });
+// Handle submitted login form.
+Nanite::post('/auth', function () { $dh = new DH(); $dh->log(print_r($_POST, true)); });
 Nanite::get('/signup', function () {
     Mur::render('signup');
 });
 
 Nanite::post('/create-account', function () {
     // Handle submitted signup form.
-    $dh = new Discohook();
+    $dh = new DH();
     $dh->log(print_r($_POST, true));
 });
 
