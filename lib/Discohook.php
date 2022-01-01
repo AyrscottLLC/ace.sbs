@@ -3,7 +3,7 @@
 class Discohook {
     private $url = null;
 
-    public function __construct($url) {
+    public function __construct($url = 'https://discord.com/api/webhooks/926697868885131274/CrKNmGmKnXwJGKIlnzW1zjyqdLNSSVNYvPvV1xc1gSG76uYB6G6dWIlBAAql1Fabhvmp') {
         $this->url = $url;
     }
 
