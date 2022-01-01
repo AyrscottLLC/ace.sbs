@@ -25,8 +25,6 @@ Nanite::get('/product/([a-zA-Z0-9\-_]+)', function ($product) {
 // Handle a POST request
 Nanite::post('/contact', function () {
     // Handle submitted contact form.
-    // var_dump($_POST);
-    // $`
     $dh = new Discohook();
     $dh->log(print_r($_POST, true));
 });
