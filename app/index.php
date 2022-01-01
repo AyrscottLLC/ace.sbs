@@ -7,7 +7,7 @@ Nanite::get('/', function(){
     Mur::render('primary');
 });
 
-Nanite::get('/category/(', function($category){
+Nanite::get('/category/([a-zA-Z0-9\-_]+)', function($category){
     Mur::render('category', array('category' => $category));
 });
 
