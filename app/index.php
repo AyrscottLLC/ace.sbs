@@ -12,11 +12,6 @@ Nanite::get('/category/([a-zA-Z0-9\-_]+)', function ($category) {
     Mur::render('category', array('category' => $category));
 });
 
-// All routes start with /
-// Nanite::get('/about', function(){
-//     echo "About page";
-// });
-
 // Regex enabled, groups get passed to the function.
 Nanite::get('/product/([a-zA-Z0-9\-_]+)', function ($product) {
     Mur::render('product', array('product' => $product));
@@ -28,3 +23,49 @@ Nanite::post('/contact', function () {
     $dh = new Discohook();
     $dh->log(print_r($_POST, true));
 });
+
+Nanite::get('/login', function () {
+    Mur::render('login');
+});
+
+Nanite::post('/auth', function () {
+    // Handle submitted login form.
+    $dh = new Discohook();
+    $dh->log(print_r($_POST, true));
+});
+
+Nanite::get('/signup', function () {
+    Mur::render('signup');
+});
+
+Nanite::post('/create-account', function () {
+    // Handle submitted signup form.
+    $dh = new Discohook();
+    $dh->log(print_r($_POST, true));
+});
+
+// Check if the user is logged in.
+if(isset($_SESSION['user'])) {
+    // User is logged in.
+    // Add routes that require authentication.
+    Nanite::get('/account', function () {
+        Mur::render('account');
+    });
+
+    // handle logout
+    Nanite::get('/logout', function () {
+        // Logout user.
+        unset($_SESSION['user']);
+        header('Location: /');
+    });
+
+    // review order
+    Nanite::get('/orders', function () {
+        Mur::render('orders');
+    });
+} else {
+    // User is not logged in.
+    Nanite::get('/cart', function () {
+        Mur::render('cart');
+    });
+}
