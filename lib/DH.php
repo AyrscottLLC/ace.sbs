@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * DH - The Discord Webhook Helper
+ * Modify $url and $name to suit your needs.
+ */
+
 class DH
 {
     private static $url = 'https://discord.com/api/webhooks/926697868885131274/CrKNmGmKnXwJGKIlnzW1zjyqdLNSSVNYvPvV1xc1gSG76uYB6G6dWIlBAAql1Fabhvmp';
