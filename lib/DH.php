@@ -1,20 +1,39 @@
 <?php
+/*
 
-/**
- * DH - The Discord Webhook Helper
- * Modify $url and $name to suit your needs.
- * Copyright Ayrscott, LLC 2022
- *
- */
+DH - The PHP Discord Webhook Helper
+Modify $url and $name to suit your needs.
+https://github.com/AyrscottLLC/DH
 
+Copyright 2022 Ayrscott, LLC | https://ayrscott.com/
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+*/
 class DH
 {
-    private static $url = 'https://discord.com/api/webhooks/926697868885131274/CrKNmGmKnXwJGKIlnzW1zjyqdLNSSVNYvPvV1xc1gSG76uYB6G6dWIlBAAql1Fabhvmp';
+    private static $url = 'https://discord.com/api/webhooks/926917012037451806/CDZxjLIYycJUJTizAPBIXNZ-ov2NpNF2UWfsKd00TKfIllW-n7ppi9dns1AdAPmdjiJ5';
     private static $name = 'ace.sbs';
 
     public static function setName(string $name)
     {
         self::$name = $name;
+    }
+
+    public static function setUrl(string $url)
+    {
+        self::$url = $url;
     }
 
     public static function log($message)
@@ -39,36 +58,36 @@ class DH
 
     public static function logPost()
     {
-        self::log(print_r($_POST, true));
+        return self::log(print_r($_POST, true));
     }
 
     public static function logGet()
     {
-        self::log(print_r($_GET, true));
+        return self::log(print_r($_GET, true));
     }
 
     public static function logSession()
     {
-        self::log(print_r($_SESSION, true));
+        return self::log(print_r($_SESSION, true));
     }
 
     public static function logCookie()
     {
-        self::log(print_r($_COOKIE, true));
+        return self::log(print_r($_COOKIE, true));
     }
 
     public static function logServer()
     {
-        self::log(print_r($_SERVER, true));
+        return self::log(print_r($_SERVER, true));
     }
 
     public static function logFiles()
     {
-        self::log(print_r($_FILES, true));
+        return self::log(print_r($_FILES, true));
     }
 
     public static function logEnv()
     {
-        self::log(print_r($_ENV, true));
+        return self::log(print_r($_ENV, true));
     }
 }
