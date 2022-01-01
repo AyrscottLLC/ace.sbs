@@ -3,6 +3,8 @@
 /**
  * DH - The Discord Webhook Helper
  * Modify $url and $name to suit your needs.
+ * Copyright Ayrscott, LLC 2022
+ *
  */
 
 class DH
