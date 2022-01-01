@@ -18,8 +18,8 @@ if(isset($_SESSION['user'])) {
     Nanite::get('/orders', function () { Mur::render('orders'); });
 } else {
     // routes that require no authentication.
-    Nanite::post('/create-account', function () { DH::logPost(); });
     Nanite::get('/signup', function () { Mur::render('signup'); });
     Nanite::get('/login', function () { Mur::render('login'); });
     Nanite::post('/auth', function () { DH::logPost(); });
+    Nanite::post('/create-account', function () { DH::logPost(); });
 }
