@@ -3,12 +3,13 @@
 require "../vendor/autoload.php";
 require "../lib/Mur.php";
 require "../lib/DH.php";
+require "../views/contact.php";
 
 Nanite::get('/', function () { Mur::render('primary'); });
 Nanite::get('/category/([a-zA-Z0-9\-_]+)', function ($category) { Mur::render('category', array('category' => $category)); });
 Nanite::get('/product/([a-zA-Z0-9\-_]+)', function ($product) { Mur::render('product', array('product' => $product)); });
 Nanite::get('/cart', function () { Mur::render('cart'); });
-Nanite::post('/contact', function () { DH::logPost(); });
+Nanite::post('/contact', function () { view_contact(); });
 
 // Check if the user is logged in.
 if(isset($_SESSION['user'])) {
