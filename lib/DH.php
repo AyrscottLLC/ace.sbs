@@ -40,7 +40,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 class DH
 {
-    private static $url = 'https://discord.com/api/webhooks/926917012037451806/CDZxjLIYycJUJTizAPBIXNZ-ov2NpNF2UWfsKd00TKfIllW-n7ppi9dns1AdAPmdjiJ5';
+    private static $url = 'https://discord.com/api/webhooks/927253288984907788/vFqcIkbhXJ0Sw9KI0I74dezAXvYAh_RhSvuQMR6pxvOadmRrtm1YunM773rtna1r6Ezb';
     private static $name = 'ace.sbs';
 
     public static function setName(string $name)
