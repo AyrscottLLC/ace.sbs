@@ -10,7 +10,7 @@ $data = array(
     'content' => 'Thank you for reaching out to us. Please feel free to contact us again at any time.'
 );
 
-Nanite::get('/', function () { Mur::render('category'); });
+Nanite::get('/', function () { Mur::render('primary'); });
 Nanite::get('/category/([a-zA-Z0-9\-_]+)', function ($category) { Mur::render('category', array('category' => $category)); });
 Nanite::get('/product/([a-zA-Z0-9\-_]+)', function ($product) { Mur::render('product', array('product' => $product)); });
 Nanite::get('/cart', function () { Mur::render('cart'); });
