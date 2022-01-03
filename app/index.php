@@ -1,6 +1,6 @@
 <?php
 
-set_include_path(get_include_path().';..\\vendor');
+// set_include_path(get_include_path().';..\\vendor');
 
 require "../vendor/autoload.php";
 require "../lib/Mur.php";
