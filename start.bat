@@ -1,2 +1,2 @@
 @echo off
-php -S localhost:8000 -t app/
+heroku local local

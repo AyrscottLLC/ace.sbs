@@ -3,6 +3,9 @@
     "description": "Ayrscott Computers & Electronics Website",
     "type": "project",
     "license": "proprietary",
+    "require-dev": {
+        "heroku/heroku-buildpack-php" : "dev-master"
+    },
     "require": {
         "php": "^8.0.0",
         "nirix/nanite": "^1.1",
