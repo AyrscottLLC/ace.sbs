@@ -1,6 +1,7 @@
 <?php
 
 // set_include_path(get_include_path().';..\\vendor');
+// set_include_path('.;C:\Users\jared\OneDrive\Ayrscott\Projects\ace.sbs');
 
 require "../vendor/autoload.php";
 require "../lib/Mur.php";
