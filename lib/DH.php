@@ -40,7 +40,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 class DH
 {
-    private static $url = 'https://discord.com/api/webhooks/927253288984907788/vFqcIkbhXJ0Sw9KI0I74dezAXvYAh_RhSvuQMR6pxvOadmRrtm1YunM773rtna1r6Ezb';
+    private static $url = null;
     private static $name = 'ace.sbs';
 
     public static function setName(string $name)
@@ -55,6 +55,20 @@ class DH
 
     public static function log($message)
     {
+        if(self::$url == null)
+        {
+            if(!empty($_ENV['DISCORD_WEBHOOK_URL']))
+            {
+                self::$url = $_ENV['DISCORD_WEBHOOK_URL'];
+            }
+            else
+            {
+                echo "No webhook url set. Please set one in the .env file or in the DH::setUrl() method.";
+                return;
+            }
+        }
+
+
         // prepare the webhook data
         $headers = ['Content-Type: application/json; charset=utf-8'];
         $POST = ['username' => self::$name, 'content' => $message];

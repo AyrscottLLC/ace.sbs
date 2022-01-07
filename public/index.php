@@ -1,31 +1,17 @@
 <?php
 
-// set_include_path(get_include_path().';..\\vendor');
-// set_include_path('.;C:\Users\jared\OneDrive\Ayrscott\Projects\ace.sbs');
-
-
 require "../vendor/autoload.php";
-
 require "../lib/Mur.php";
 require "../lib/DH.php";
-
 require "../views/contact.php";
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
 $dotenv->safeLoad();
 
-$data = array(
-    'title' => 'Contact',
-    'content' => 'Thank you for reaching out to us. Please feel free to contact us again at any time.'
-);
-
 // debug route
 
 Nanite::get('/debug', function () {
-    echo '<pre>';
-    var_dump($_ENV);
-    echo '</pre>';
-
+    echo "<pre>Welcome to Debugland.\nEnjoy your stay.\n</pre>";
  });
 
 
